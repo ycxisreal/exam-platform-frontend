@@ -1,0 +1,134 @@
+{
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/auth/login",
+			"style": {
+				"navigationBarTitleText": "用户登录"
+			}
+		},
+		{
+			"path": "pages/auth/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		},
+		{
+			"path": "pages/auth/change-password",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		},
+		{
+			"path": "pages/index/userIndex",
+			"style": {
+				"navigationBarTitleText": "我的主页"
+			}
+		},
+		{
+			"path": "pages/index/exams",
+			"style": {
+				"navigationBarTitleText": "考试记录"
+			}
+		},
+		{
+			"path": "pages/index/analysis",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		},
+		{
+			"path": "pages/admin/AdminHome",
+			"style": {
+				"navigationBarTitleText": "管理员首页"
+			}
+		},
+		{
+			"path": "pages/admin/QuestionList",
+			"style": {
+				"navigationBarTitleText": "题库管理"
+			}
+		},
+		{
+			"path": "pages/admin/CategoryList",
+			"style": {
+				"navigationBarTitleText": "分类管理"
+			}
+		},
+		{
+			"path": "pages/admin/TemplateList",
+			"style": {
+				"navigationBarTitleText": "模板管理"
+			}
+		},
+		{
+			"path": "pages/admin/Analyze",
+			"style": {
+				"enablePullDownRefresh": false,
+				"app-plus": { "nvueCompiler": "uni-app" },
+				"navigationBarTitleText": "统计报告"
+			}
+		},
+		{
+			"path": "pages/exam/undoneExam",
+			"style": {
+				"navigationBarTitleText": "未考考试"
+			}
+		},
+		{
+			"path": "pages/exam/doneExam",
+			"style": {
+				"navigationBarTitleText": "已考考试"
+			}
+		},
+		{
+			"path": "pages/exam/WrongQuestion",
+			"style": {
+				"navigationBarTitleText": "查看错题"
+			}
+		},
+		{
+			"path": "pages/exam/detail",
+			"style": {
+				"navigationBarTitleText": "考试详情"
+			}
+		},
+	],
+	"tabBar": {
+		"color": "#999",
+		"selectedColor": "#007AFF",
+		"backgroundColor": "#fff",
+		"list": [
+			{
+				"pagePath": "pages/index/analysis",
+				"text": "考试分析",
+				"iconPath": "static/TabBar/分析.png",
+				"selectedIconPath": "static/TabBar/分析激活.png"
+			},
+			{
+				"pagePath": "pages/index/exams",
+				"text": "考试",
+				"iconPath": "static/TabBar/考试.png",
+				"selectedIconPath": "static/TabBar/考试激活.png"
+			},
+			{
+				"pagePath": "pages/index/userIndex",
+				"text": "我的",
+				"iconPath": "static/TabBar/我的设置.png",
+				"selectedIconPath": "static/TabBar/我的设置激活.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	}
+}
